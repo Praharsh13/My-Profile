@@ -24,7 +24,7 @@ const ManageProjects = () => {
   );
 
   const handleReturnToDashboard = () => {
-    navigateTo("/dashboard");
+    navigateTo("/");
   };
 
   const handleProjectDelete = (id) => {

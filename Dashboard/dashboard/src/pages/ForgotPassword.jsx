@@ -22,7 +22,7 @@ const ForgotPassword=()=>{
             dispatch(clearAllForgotPasswordErrors())
         }
         if(isAuthenticated){
-            navigateTo("/dashboard")
+            navigateTo("/")
         }
         if(message!==null){
            toast.success(message)

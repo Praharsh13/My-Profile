@@ -93,7 +93,7 @@ const UpdateProject = () => {
     console.log(formData)
   };
 
-  const handleReturnToDashboard = () => navigateTo("/dashboard");
+  const handleReturnToDashboard = () => navigateTo("/");
 
   return (
     <div className={`${darkMode ? "dark" : ""}`}>

@@ -20,7 +20,7 @@ const ManageTimeline = () => {
   );
 
   const handleReturnToDashboard = () => {
-    navigateTo("/dashboard");
+    navigateTo("/");
   };
 
   const handleDeleteTimeline = (id) => {

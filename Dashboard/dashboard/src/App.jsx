@@ -1,6 +1,6 @@
 //import HomePage from "./pages/HomePage";
 import React, { useEffect } from "react";
-import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
+import { BrowserRouter ,Routes,Route,  } from "react-router-dom";
 import ForgotPassword from "./pages/ForgotPassword";
 import ResetPassword from "./pages/ResetPassword";
 import ManageSkill from "./pages/ManageSkill";
@@ -34,9 +34,9 @@ const App=()=>{
   },[])
   return(
     <>
-    <Router>
+    <BrowserRouter basename="/dashboard">
       <Routes>
-        <Route path="/dashboard" element={<HomePage/>}/>
+        <Route path="/" element={<HomePage/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/password/forgot" element={<ForgotPassword/>}/>
         <Route path="/password/reset/:token" element={<ResetPassword/>}/>
@@ -47,7 +47,7 @@ const App=()=>{
         <Route path="/update/project/:id" element={<UpdateProject/>}/>
       </Routes>
       <ToastContainer position="bottom-right" theme="dark"/>
-    </Router>
+    </BrowserRouter>
     </>
   )
 }

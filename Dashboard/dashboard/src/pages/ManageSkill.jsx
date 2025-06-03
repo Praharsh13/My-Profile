@@ -41,7 +41,7 @@ const ManageSkills = () => {
     dispatch(deleteSkill(id));
   };
 
-  const handleReturnToDashboard = () => navigateTo("/dashboard");
+  const handleReturnToDashboard = () => navigateTo("/");
 
   useEffect(() => {
     dispatch(getAllSkills());

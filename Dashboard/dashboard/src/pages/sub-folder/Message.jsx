@@ -21,7 +21,7 @@ const Messages = () => {
   );
   const [messageId, setMessageId] = useState("");
 
-  const handleReturnToDashboard = () => navigateTo("/dashboard");
+  const handleReturnToDashboard = () => navigateTo("/");
 
   const handleMessageDelete = (id) => {
     setMessageId(id);

@@ -1,7 +1,7 @@
 
 import  Home  from './pages/Home'
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter , Routes, Route } from 'react-router-dom'
 import Skills from './pages/Skills'
 import Projects from './pages/Projects'
 import AboutMe from './pages/AboutMe'
@@ -17,7 +17,7 @@ function App() {
   return (
     <>
     
-      <Router>
+    <BrowserRouter basename="/profile">
       <div className="flex flex-col min-h-screen bg-black text-white">
         <main className="flex-grow">
       <Routes>
@@ -33,7 +33,7 @@ function App() {
       </main>
         <Footer />
         </div>
-    </Router>
+    </BrowserRouter>
         
      
     </>

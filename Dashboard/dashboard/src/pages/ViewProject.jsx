@@ -53,7 +53,7 @@ const ViewProject = () => {
         <div className="flex justify-between items-center">
           <h1 className="text-3xl md:text-4xl font-bold">{title}</h1>
           <button
-            onClick={() => navigateTo("/dashboard")}
+            onClick={() => navigateTo("/")}
             className="px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition"
           >
             Return to Dashboard
