@@ -1,3 +1,5 @@
 .qodo
 # Ignore environment config
 config/config.env
+
+*.env
