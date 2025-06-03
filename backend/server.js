@@ -8,7 +8,8 @@ cloudinary.v2.config({
 })
 
 //this to run the server
+const PORT= process.env.PORT || 8080
 
-app.listen(3201,()=>{
-    console.log(`Server is running at port 3201`);
+app.listen(PORT,'0.0.0.0',()=>{
+    console.log(`Server is running at port ${PORT}`);
 })
