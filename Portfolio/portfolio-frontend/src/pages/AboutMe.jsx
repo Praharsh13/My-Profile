@@ -160,7 +160,7 @@ const AboutMe = () => {
     const getProfile = async () => {
       try {
         const { data } = await axios.get(
-          `${import.meta.env.VITE_API_URL}/user/getuser`,
+          `${import.meta.env.VITE_API_URL}/user/getprofileforeveryone`,
           { withCredentials: true }
         );
         setUser(data.user);

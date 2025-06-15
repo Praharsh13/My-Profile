@@ -9,7 +9,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    axios.get(`${import.meta.env.VITE_API_URL}/user/getuser`, { withCredentials: true })
+    axios.get(`${import.meta.env.VITE_API_URL}/user/getprofileforeveryone`, { withCredentials: true })
       .then(res => setUser(res.data.user))
       .catch(err => console.error(err));
   }, []);
