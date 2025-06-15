@@ -134,7 +134,7 @@ export const login=(email,password)=>async (dispatch)=>{
         dispatch(userSlice.actions.clearAllErrors())
     }
         catch(error){
-            dispatch(userSlice.actions.loginFailed(error.response.data.message))
+            dispatch(userSlice.actions.loginFailed(error.response?.data?.message))
 
         }
     
